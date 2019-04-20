@@ -9,3 +9,10 @@ Install angular cli: npm install -g @angular/cli Check: ng --version
 ng new ng-ecommerce
 code .
 ng serve
+
+## 3. Setting up Firebase
+Create a firebase account. It's free and go to https://console.firebase.google.com
+Click on "Add Project"
+Give Project name : ng-ecommerce
+Click on "Add Firebase to your web app".
+Copy the config properties from firebase project to our application's environment.ts and environment.prod.ts file.
