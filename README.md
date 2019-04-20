@@ -43,3 +43,8 @@ ng g c seller/seller-cell-phones, ng g c seller/delivery
 ## 9. Setting up routes
 RouterModule.forRoot([{ path: '', component: FrontComponent }])
 routerLink, router-outlet
+
+## 10. Installing ng-bootstrap for js components of bootstrap & creating a dropdown functionality
+npm i --save @ng-bootstrap/ng-bootstrap
+We included just bootstrap css so far. But for the js components we need to install another package called ng-bootstrap.
+This has directives for generating bootstrap components like dropdown items etc that can be used with angular.

@@ -5,6 +5,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -35,6 +36,7 @@ import { DeliveryComponent } from './seller/delivery/delivery.component';
     AngularFireModule.initializeApp(environment.firebaseconfig), 
     AngularFireDatabaseModule, 
     AngularFireAuthModule,
+    NgbModule.forRoot(),
     RouterModule.forRoot([
       { path: '', component: FrontComponent },
       { path: 'cell-phones', component: CellPhonesComponent },
