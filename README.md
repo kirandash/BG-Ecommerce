@@ -67,3 +67,12 @@ Make sure it is reflected in firebase.json file.
 Build project. With npm build --prod
 Deploy to firebase: firebase deploy
 Check the deployed app at https://ng-ecommerce-42b67.firebaseapp.com/
+
+## 14. Set up Google Authentication & create login component
+https://console.firebase.google.com
+For project ng-ecommerce
+Select Authentication
+Enable Google Authentication
+
+Create login component
+ng g c common/login
