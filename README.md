@@ -24,3 +24,6 @@ check versions in package.json ("angularfire2": "^5.1.2", "firebase": "^5.10.0")
 ## 5. Installing bootstrap
 npm i --save bootstrap
 Imort in styles.css
+
+## 6. Creating navbar from bootstrap starter template
+https://getbootstrap.com/docs/4.3/examples/starter-template/
