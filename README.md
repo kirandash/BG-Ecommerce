@@ -27,3 +27,7 @@ Imort in styles.css
 
 ## 6. Creating navbar from bootstrap starter template
 https://getbootstrap.com/docs/4.3/examples/starter-template/
+
+## 7. Creating navbar component
+ng g c navbar --dry-run
+ng g c navbar
