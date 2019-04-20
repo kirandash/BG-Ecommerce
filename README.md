@@ -39,3 +39,7 @@ user: My purchases page,
 ng g c user/my-purchases
 seller: cell phones page, delivery page
 ng g c seller/seller-cell-phones, ng g c seller/delivery
+
+## 9. Setting up routes
+RouterModule.forRoot([{ path: '', component: FrontComponent }])
+routerLink, router-outlet

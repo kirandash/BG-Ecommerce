@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -33,7 +34,17 @@ import { DeliveryComponent } from './seller/delivery/delivery.component';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseconfig), 
     AngularFireDatabaseModule, 
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    RouterModule.forRoot([
+      { path: '', component: FrontComponent },
+      { path: 'cell-phones', component: CellPhonesComponent },
+      { path: 'cart', component: CartComponent },
+      { path: 'checkout', component: CheckoutComponent },
+      { path: 'thank-you', component: ThankYouComponent },
+      { path: 'my-purchases', component: MyPurchasesComponent },
+      { path: 'seller-cell-phones', component: SellerCellPhonesComponent },
+      { path: 'delivery', component: DeliveryComponent },
+    ])// RouterModule with route objects having path and component
   ],
   providers: [],
   bootstrap: [AppComponent]
