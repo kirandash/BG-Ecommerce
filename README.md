@@ -13,7 +13,7 @@ ng serve
 ## 3. Setting up Firebase
 Create a firebase account. It's free and go to https://console.firebase.google.com
 Click on "Add Project"
-Give Project name : ng-ecommerce
+Give Project name : BG-Ecommerce
 Click on "Add Firebase to your web app".
 Copy the config properties from firebase project to our application's environment.ts and environment.prod.ts file.
 
@@ -52,3 +52,18 @@ This has directives for generating bootstrap components like dropdown items etc 
 ## 11. Creating user and seller dropdowns
 
 ## 12. Adding cursor pointer to dropdown link
+
+## 13. Firebase Deployment
+npm i -g firebase-tools
+check: firebase --version
+Open command line of windows. Go to D:/projects/ng-ecommerce/
+firebase login from Windows command line. (Git bash does not work) It will open a prompt in browser. Login with your gmail account.
+firebase init
+select hosting from the options and hit enter.
+Enter dist/ng-ecommerce as the directory for deployment instead of public
+enter No for rewriting index.html options
+Make sure it is reflected in firebase.json file.
+
+Build project. With npm build --prod
+Deploy to firebase: firebase deploy
+Check the deployed app at https://ng-ecommerce-42b67.firebaseapp.com/
