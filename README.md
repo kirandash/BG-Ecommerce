@@ -16,3 +16,8 @@ Click on "Add Project"
 Give Project name : ng-ecommerce
 Click on "Add Firebase to your web app".
 Copy the config properties from firebase project to our application's environment.ts and environment.prod.ts file.
+
+## 4. Installing Dev Dependencies
+npm i --save firebase angularfire2
+check versions in package.json ("angularfire2": "^5.1.2", "firebase": "^5.10.0")
+
