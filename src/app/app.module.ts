@@ -7,11 +7,27 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FrontComponent } from './common/front/front.component';
+import { CellPhonesComponent } from './common/cell-phones/cell-phones.component';
+import { CartComponent } from './common/cart/cart.component';
+import { CheckoutComponent } from './common/checkout/checkout.component';
+import { ThankYouComponent } from './common/thank-you/thank-you.component';
+import { MyPurchasesComponent } from './user/my-purchases/my-purchases.component';
+import { SellerCellPhonesComponent } from './seller/seller-cell-phones/seller-cell-phones.component';
+import { DeliveryComponent } from './seller/delivery/delivery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    FrontComponent,
+    CellPhonesComponent,
+    CartComponent,
+    CheckoutComponent,
+    ThankYouComponent,
+    MyPurchasesComponent,
+    SellerCellPhonesComponent,
+    DeliveryComponent
   ],
   imports: [
     BrowserModule,

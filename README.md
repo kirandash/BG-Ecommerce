@@ -31,3 +31,11 @@ https://getbootstrap.com/docs/4.3/examples/starter-template/
 ## 7. Creating navbar component
 ng g c navbar --dry-run
 ng g c navbar
+
+## 8. Create components for pages
+common: front page, cell phones page, cart page, checkout page, thank you page
+ng g c common/front, ng g c common/cell-phones, ng g c common/cart, ng g c common/checkout, ng g c common/thank-you
+user: My purchases page, 
+ng g c user/my-purchases
+seller: cell phones page, delivery page
+ng g c seller/seller-cell-phones, ng g c seller/delivery
