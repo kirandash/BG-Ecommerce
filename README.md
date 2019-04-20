@@ -50,3 +50,5 @@ We included just bootstrap css so far. But for the js components we need to inst
 This has directives for generating bootstrap components like dropdown items etc that can be used with angular.
 
 ## 11. Creating user and seller dropdowns
+
+## 12. Adding cursor pointer to dropdown link
