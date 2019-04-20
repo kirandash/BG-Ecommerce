@@ -21,3 +21,6 @@ Copy the config properties from firebase project to our application's environmen
 npm i --save firebase angularfire2
 check versions in package.json ("angularfire2": "^5.1.2", "firebase": "^5.10.0")
 
+## 5. Installing bootstrap
+npm i --save bootstrap
+Imort in styles.css
