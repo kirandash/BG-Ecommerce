@@ -43,9 +43,9 @@ import { DeliveryComponent } from './seller/delivery/delivery.component';
       { path: 'cart', component: CartComponent },
       { path: 'checkout', component: CheckoutComponent },
       { path: 'thank-you', component: ThankYouComponent },
-      { path: 'my-purchases', component: MyPurchasesComponent },
-      { path: 'seller-cell-phones', component: SellerCellPhonesComponent },
-      { path: 'delivery', component: DeliveryComponent },
+      { path: 'user/my-purchases', component: MyPurchasesComponent },
+      { path: 'seller/cell-phones', component: SellerCellPhonesComponent },
+      { path: 'seller/delivery', component: DeliveryComponent },
     ])// RouterModule with route objects having path and component
   ],
   providers: [],
