@@ -45,12 +45,13 @@ import { AuthRouteGuardService } from './services/auth-route-guard.service';
       { path: '', component: FrontComponent },
       { path: 'cell-phones', component: CellPhonesComponent },
       { path: 'cart', component: CartComponent },
-      { path: 'checkout', component: CheckoutComponent },
-      { path: 'thank-you', component: ThankYouComponent },
-      { path: 'user/my-purchases', component: MyPurchasesComponent },
-      { path: 'seller/cell-phones', component: SellerCellPhonesComponent },
-      { path: 'seller/delivery', component: DeliveryComponent },
-      { path: 'signin', component: SigninComponent }
+      { path: 'signin', component: SigninComponent },
+      // Routes only for signed in users
+      { path: 'checkout', component: CheckoutComponent, canActivate: [AuthRouteGuardService] },
+      { path: 'thank-you', component: ThankYouComponent, canActivate: [AuthRouteGuardService] },
+      { path: 'user/my-purchases', component: MyPurchasesComponent, canActivate: [AuthRouteGuardService] },
+      { path: 'seller/cell-phones', component: SellerCellPhonesComponent, canActivate: [AuthRouteGuardService] },
+      { path: 'seller/delivery', component: DeliveryComponent, canActivate: [AuthRouteGuardService] }
     ])// RouterModule with route objects having path and component
   ],
   providers: [

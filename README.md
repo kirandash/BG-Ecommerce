@@ -104,3 +104,6 @@ Add the service in providers for app.module
 ## 22. Moving sign in sign out and user details to service from component
 
 ## 23. Creating AuthRouteGuardService to protect checkout route
+
+## 24. Route Guard with canActivate
+canActivate, router.navigate, .pipe(map)
