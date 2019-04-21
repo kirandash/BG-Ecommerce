@@ -19,6 +19,7 @@ import { SellerCellPhonesComponent } from './seller/seller-cell-phones/seller-ce
 import { DeliveryComponent } from './seller/delivery/delivery.component';
 import { SigninComponent } from './common/signin/signin.component';
 import { AuthService } from './services/auth.service';
+import { AuthRouteGuardService } from './services/auth-route-guard.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { AuthService } from './services/auth.service';
     ])// RouterModule with route objects having path and component
   ],
   providers: [
-    AuthService
+    AuthService,
+    AuthRouteGuardService
   ],
   bootstrap: [AppComponent]
 })
