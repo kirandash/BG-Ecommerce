@@ -57,7 +57,7 @@ This has directives for generating bootstrap components like dropdown items etc 
 npm i -g firebase-tools
 check: firebase --version
 Open command line of windows. Go to D:/projects/ng-ecommerce/
-firebase login from Windows command line. (Git bash does not work) It will open a prompt in browser. Login with your gmail account.
+firebase signin from Windows command line. (Git bash does not work) It will open a prompt in browser. signin with your gmail account.
 firebase init
 select hosting from the options and hit enter.
 Enter dist/ng-ecommerce as the directory for deployment instead of public
@@ -68,17 +68,17 @@ Build project. With npm build --prod
 Deploy to firebase: firebase deploy
 Check the deployed app at https://ng-ecommerce-42b67.firebaseapp.com/
 
-## 14. Set up Google Authentication & create login component
+## 14. Set up Google Authentication & create signin component
 https://console.firebase.google.com
 For project ng-ecommerce
 Select Authentication
 Enable Google Authentication
 
-Create login component
-ng g c common/login
+Create signin component
+ng g c common/signin
 
-## 15. Creating login authentication
-After loggin in user details with email and user id get saved in firebase under users information
+## 15. Creating signin authentication
+After signin in user details with email and user id get saved in firebase under users information
 
 ## 16. Signout
 AngularFireAuth

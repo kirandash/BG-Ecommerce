@@ -17,7 +17,7 @@ import { ThankYouComponent } from './common/thank-you/thank-you.component';
 import { MyPurchasesComponent } from './user/my-purchases/my-purchases.component';
 import { SellerCellPhonesComponent } from './seller/seller-cell-phones/seller-cell-phones.component';
 import { DeliveryComponent } from './seller/delivery/delivery.component';
-import { LoginComponent } from './common/login/login.component';
+import { SigninComponent } from './common/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { LoginComponent } from './common/login/login.component';
     MyPurchasesComponent,
     SellerCellPhonesComponent,
     DeliveryComponent,
-    LoginComponent
+    SigninComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +48,7 @@ import { LoginComponent } from './common/login/login.component';
       { path: 'user/my-purchases', component: MyPurchasesComponent },
       { path: 'seller/cell-phones', component: SellerCellPhonesComponent },
       { path: 'seller/delivery', component: DeliveryComponent },
-      { path: 'login', component: LoginComponent }
+      { path: 'signin', component: SigninComponent }
     ])// RouterModule with route objects having path and component
   ],
   providers: [],
