@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import * as firebase from 'firebase';
-import { AngularFireAuth } from 'angularfire2/auth';
+// import * as firebase from 'firebase';
+// import { AngularFireAuth } from 'angularfire2/auth';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-signin',
@@ -9,13 +10,14 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 export class SigninComponent implements OnInit {
 
-  constructor(private angfireAuth: AngularFireAuth) { }
+  constructor(private auth: AuthService) { }
 
   ngOnInit() {
   }
 
   signin() {
-    this.angfireAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider()) // Using the redirect feature to redirect to google oAuth provider
+    // this.angfireAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider()) // Using the redirect feature to redirect to google oAuth provider
+    this.auth.signin();
   }
 
 }

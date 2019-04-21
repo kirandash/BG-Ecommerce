@@ -15,7 +15,7 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/cart">Cart</a>
       </li>
-      <li class="nav-item dropdown" ngbDropdown *ngIf="userObservable | async as user">
+      <li class="nav-item dropdown" ngbDropdown *ngIf="auth.userObservable | async as user">
         <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>{{user?.displayName}}</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
           <a class="dropdown-item" routerLink="/user/my-purchases">My Purchases</a>
@@ -33,7 +33,7 @@
           <a class="nav-link" routerLink="/signin">Sign In</a>
         </li>
       </ng-template>
-      <li class="nav-item" *ngIf="userObservable | async; else unknownUser">
+      <li class="nav-item" *ngIf="auth.userObservable | async; else unknownUser">
         <a class="nav-link" (click)="signout()">Sign Out</a>
       </li>
     </ul>

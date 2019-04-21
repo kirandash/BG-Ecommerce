@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase';
-import { Observable } from 'rxjs';
+// import { AngularFireAuth } from 'angularfire2/auth';
+// import * as firebase from 'firebase';
+// import { Observable } from 'rxjs';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,13 +11,14 @@ import { Observable } from 'rxjs';
 })
 export class NavbarComponent implements OnInit {
   // user: firebase.User;
-  userObservable: Observable<firebase.User>;
-  constructor(private angfireAuth: AngularFireAuth) {
+  // userObservable: Observable<firebase.User>;
+  constructor(public auth: AuthService) {
     /*angfireAuth.authState.subscribe(resp => {
       console.log(resp);// For debugging purpose to check the auth state for sign in and sign out (null = signout, object = signed in)
       this.user = resp;
     });*/
-    this.userObservable = angfireAuth.authState;
+    // this.userObservable = angfireAuth.authState;
+
     /*this.userObservable.subscribe(resp => {
       console.log(resp); // Only for debugging purpose
     });*/
@@ -26,7 +28,8 @@ export class NavbarComponent implements OnInit {
   }
 
   signout() {
-    this.angfireAuth.auth.signOut();
+    // this.angfireAuth.auth.signOut();
+    this.auth.signout();
   }
 
 }

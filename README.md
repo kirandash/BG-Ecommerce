@@ -100,3 +100,5 @@ Solutions: 1. Call unsubscribe method on onDestroy lifecycle of component or
 So far we added the sign in and sign out service in component. But it makes things difficult while testing. So better to avoid tight coupling and move service to a new file thus, while testing we can fake these auth services instead of providing actual data
 ng g s services/auth
 Add the service in providers for app.module
+
+## 22. Moving sign in sign out and user details to service from component
