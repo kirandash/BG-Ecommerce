@@ -79,3 +79,7 @@ ng g c common/login
 
 ## 15. Creating login authentication
 After loggin in user details with email and user id get saved in firebase under users information
+
+## 16. Signout
+AngularFireAuth
+.auth.signOut()
