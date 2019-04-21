@@ -107,3 +107,8 @@ Add the service in providers for app.module
 
 ## 24. Route Guard with canActivate
 canActivate, router.navigate, .pipe(map)
+
+## 25. Redirecting to previous page after signing in
+RouterStateSnapshot & query params
+IMPORTANT: 
+Note that subscribe events in app.component.ts does not need to be unsubscribed becaused everything on app.component loads only once with our app. But for the dynamic components inside our app that can get called multiple times while we navigate, we should unsubscribe any existing observables. Otherwise it keeps on getting subscribed multiple times thus causing MEMORY LEAKS!!!
