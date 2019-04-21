@@ -93,3 +93,5 @@ user.displayName
 Any observable we are subscribing to should be unsubscribed. 
 Solutions: 1. Call unsubscribe method on onDestroy lifecycle of component or
 2. Instead of subscribing to the observable, declare it in component and then use it's value with async pipe in component.html. (Best solution)
+
+## 20. ngIf else and ng-template for sign in and out
