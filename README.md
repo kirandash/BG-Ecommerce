@@ -88,3 +88,8 @@ AngularFireAuth
 
 ## 18. Conditions to show signin and signout links & showing username
 user.displayName
+
+## 19. Asynchronously subscribing and unsubscribing to firebase observable
+Any observable we are subscribing to should be unsubscribed. 
+Solutions: 1. Call unsubscribe method on onDestroy lifecycle of component or
+2. Instead of subscribing to the observable, declare it in component and then use it's value with async pipe in component.html. (Best solution)
