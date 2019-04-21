@@ -85,3 +85,6 @@ AngularFireAuth
 .auth.signOut()
 
 ## 17. Changing signin text and adding cursor pointer to signout link
+
+## 18. Conditions to show signin and signout links & showing username
+user.displayName
