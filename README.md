@@ -83,3 +83,5 @@ After signin in user details with email and user id get saved in firebase under 
 ## 16. Signout
 AngularFireAuth
 .auth.signOut()
+
+## 17. Changing signin text and adding cursor pointer to signout link
