@@ -18,6 +18,7 @@ import { MyPurchasesComponent } from './user/my-purchases/my-purchases.component
 import { SellerCellPhonesComponent } from './seller/seller-cell-phones/seller-cell-phones.component';
 import { DeliveryComponent } from './seller/delivery/delivery.component';
 import { SigninComponent } from './common/signin/signin.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,9 @@ import { SigninComponent } from './common/signin/signin.component';
       { path: 'signin', component: SigninComponent }
     ])// RouterModule with route objects having path and component
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
