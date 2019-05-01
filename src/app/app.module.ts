@@ -20,6 +20,7 @@ import { DeliveryComponent } from './seller/delivery/delivery.component';
 import { SigninComponent } from './common/signin/signin.component';
 import { AuthService } from './services/auth.service';
 import { AuthRouteGuardService } from './services/auth-route-guard.service';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { AuthRouteGuardService } from './services/auth-route-guard.service';
   ],
   providers: [
     AuthService,
-    AuthRouteGuardService
+    AuthRouteGuardService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

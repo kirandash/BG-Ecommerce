@@ -114,3 +114,17 @@ IMPORTANT:
 Note that subscribe events in app.component.ts does not need to be unsubscribed becaused everything on app.component loads only once with our app. But for the dynamic components inside our app that can get called multiple times while we navigate, we should unsubscribe any existing observables. Otherwise it keeps on getting subscribed multiple times thus causing MEMORY LEAKS!!!
 
 ## 26. Create user service
+
+## 27. Saving signed in user data into database
+https://console.firebase.google.com
+Go to database url mentioned in environment.ts
+https://ng-ecommerce-42b67.firebaseio.com
+Go to Rules:
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+Change the authentication rules so that we can access the database from our Angular app.
+After signing in, you can check that the data is now stored in database.
