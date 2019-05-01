@@ -132,3 +132,6 @@ After signing in, you can check that the data is now stored in database.
 ## 28. Setting seller role for user
 Go to database, users, under user id add new property isSeller: true
 To differentiate between normal user and a seller
+
+## 29. Route Guard for Seller - Create service files
+ng g s services/seller-auth-route-guard
