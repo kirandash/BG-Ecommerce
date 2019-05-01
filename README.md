@@ -139,3 +139,6 @@ ng g s services/seller-auth-route-guard
 ## 30. Set Route Guards for Seller
 provide SellerAuthRouteGuardService in provider for app.module.ts
 After adding the route guard, modify isSeller in database. We won't be able to navigate to seller pages
+
+## 31. Hiding Seller dropdown for non seller
+Note that we have nested observables for switchMap and map in seller route guard and auth service. Thus async pipe in navar html will create an infinite loop to hang.
