@@ -135,3 +135,7 @@ To differentiate between normal user and a seller
 
 ## 29. Route Guard for Seller - Create service files
 ng g s services/seller-auth-route-guard
+
+## 30. Set Route Guards for Seller
+provide SellerAuthRouteGuardService in provider for app.module.ts
+After adding the route guard, modify isSeller in database. We won't be able to navigate to seller pages

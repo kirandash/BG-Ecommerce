@@ -21,6 +21,7 @@ import { SigninComponent } from './common/signin/signin.component';
 import { AuthService } from './services/auth.service';
 import { AuthRouteGuardService } from './services/auth-route-guard.service';
 import { UserService } from './services/user.service';
+import { SellerAuthRouteGuardService } from './services/seller-auth-route-guard.service';
 
 @NgModule({
   declarations: [
@@ -51,14 +52,15 @@ import { UserService } from './services/user.service';
       { path: 'checkout', component: CheckoutComponent, canActivate: [AuthRouteGuardService] },
       { path: 'thank-you', component: ThankYouComponent, canActivate: [AuthRouteGuardService] },
       { path: 'user/my-purchases', component: MyPurchasesComponent, canActivate: [AuthRouteGuardService] },
-      { path: 'seller/cell-phones', component: SellerCellPhonesComponent, canActivate: [AuthRouteGuardService] },
-      { path: 'seller/delivery', component: DeliveryComponent, canActivate: [AuthRouteGuardService] }
+      { path: 'seller/cell-phones', component: SellerCellPhonesComponent, canActivate: [AuthRouteGuardService, SellerAuthRouteGuardService] },
+      { path: 'seller/delivery', component: DeliveryComponent, canActivate: [AuthRouteGuardService, SellerAuthRouteGuardService] }
     ])// RouterModule with route objects having path and component
   ],
   providers: [
     AuthService,
     AuthRouteGuardService,
-    UserService
+    UserService,
+    SellerAuthRouteGuardService
   ],
   bootstrap: [AppComponent]
 })
