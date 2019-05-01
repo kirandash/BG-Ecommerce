@@ -128,3 +128,7 @@ Go to Rules:
 }
 Change the authentication rules so that we can access the database from our Angular app.
 After signing in, you can check that the data is now stored in database.
+
+## 28. Setting seller role for user
+Go to database, users, under user id add new property isSeller: true
+To differentiate between normal user and a seller
