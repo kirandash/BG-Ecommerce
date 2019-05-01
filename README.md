@@ -142,3 +142,6 @@ After adding the route guard, modify isSeller in database. We won't be able to n
 
 ## 31. Hiding Seller dropdown for non seller
 Note that we have nested observables for switchMap and map in seller route guard and auth service. Thus async pipe in navar html will create an infinite loop to hang.
+
+## 32. Adding Null check for switchMap and subscribe
+of from rxjs

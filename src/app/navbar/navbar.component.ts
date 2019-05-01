@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { switchMap } from 'rxjs/operators';
 import { UserService } from '../services/user.service';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -25,7 +26,7 @@ export class NavbarComponent implements OnInit {
     /*this.userObservable.subscribe(resp => {
       console.log(resp); // Only for debugging purpose
     });*/
-    auth.userObservable.pipe(switchMap((user: firebase.User) => this.userService.fetch(user.uid))).subscribe(x => {this.isSeller = x.isSeller; /*console.log(this.isSeller)*/}); // No need of unsubscribing here since there is only one instance also keeping subscribing is good since if anything changes in database it will automatically reflect. Try changing isSeller property in db, it will immediately reflect on navbar
+    auth.userObservable.pipe(switchMap((user: firebase.User) => user ? this.userService.fetch(user.uid) : of(null) )).subscribe(x => {if(x) {this.isSeller = x.isSeller;} else { this.isSeller = false; } /*console.log(this.isSeller)*/}); // No need of unsubscribing here since there is only one instance also keeping subscribing is good since if anything changes in database it will automatically reflect. Try changing isSeller property in db, it will immediately reflect on navbar
   }
 
   ngOnInit() {
