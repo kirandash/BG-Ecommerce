@@ -170,3 +170,6 @@ use ngModel directive after importing FormsModule in app.module.ts
 ## 40. Save phone data in db
 use database.list('/cellphones').push(cellphone)
 and check database after saving
+
+## 41. Add mandatory validations
+required, #var = "ngModel", #var.touched && #var.invalid
