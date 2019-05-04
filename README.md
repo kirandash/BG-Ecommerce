@@ -145,3 +145,8 @@ Note that we have nested observables for switchMap and map in seller route guard
 
 ## 32. Adding Null check for switchMap and subscribe
 of from rxjs
+
+## 33. Firebase Deployment (Repeat Step 13)
+Build project. With npm build --prod (Note that we got an error here for navbar component where private var was declared. changed to public)
+Deploy to firebase: firebase deploy
+Check the deployed app at https://ng-ecommerce-42b67.firebaseapp.com/

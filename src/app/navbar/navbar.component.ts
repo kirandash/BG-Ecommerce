@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
   // user: firebase.User;
   // userObservable: Observable<firebase.User>;
   isSeller: false;
-  constructor(private auth: AuthService, private userService: UserService) {
+  constructor(public auth: AuthService, private userService: UserService) {
     /*angfireAuth.authState.subscribe(resp => {
       console.log(resp);// For debugging purpose to check the auth state for sign in and sign out (null = signout, object = signed in)
       this.user = resp;
