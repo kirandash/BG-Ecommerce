@@ -23,6 +23,7 @@ import { AuthRouteGuardService } from './services/auth-route-guard.service';
 import { UserService } from './services/user.service';
 import { SellerAuthRouteGuardService } from './services/seller-auth-route-guard.service';
 import { SellerCellPhonesFormComponent } from './seller/seller-cell-phones-form/seller-cell-phones-form.component';
+import { BrandService } from './services/brand.service';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { SellerCellPhonesFormComponent } from './seller/seller-cell-phones-form/
     AuthService,
     AuthRouteGuardService,
     UserService,
-    SellerAuthRouteGuardService
+    SellerAuthRouteGuardService,
+    BrandService
   ],
   bootstrap: [AppComponent]
 })

@@ -154,3 +154,7 @@ Check the deployed app at https://ng-ecommerce-42b67.firebaseapp.com/
 ## 34. Create seller cell phone form component
 
 ## 35. Build Seller form HTML and add navigation
+
+## 36. Adding Brands to DB and creating Brand Service
+Create brands in firebase db. (following db.json file)
+Create brand service and add it to providers for app.module.ts

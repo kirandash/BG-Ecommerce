@@ -1,0 +1,26 @@
+{
+    "brands" : {
+      "apple" : {
+        "name" : "Apple"
+      },
+      "blackberry" : {
+        "name" : "Blackberry"
+      },
+      "oneplus" : {
+        "name" : "One Plus"
+      },
+      "samsung" : {
+        "name" : "Samsung"
+      },
+      "sony" : {
+        "name" : "Sony"
+      }
+    },
+    "users" : {
+      "fm9iqLnvVFcJz85Do33R4Q4u2Th1" : {
+        "email" : "kirandash07@gmail.com",
+        "isSeller" : true,
+        "name" : "Kiran Dash"
+      }
+    }
+  }
