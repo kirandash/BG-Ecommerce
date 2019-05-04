@@ -55,6 +55,7 @@ import { SellerCellPhonesFormComponent } from './seller/seller-cell-phones-form/
       { path: 'thank-you', component: ThankYouComponent, canActivate: [AuthRouteGuardService] },
       { path: 'user/my-purchases', component: MyPurchasesComponent, canActivate: [AuthRouteGuardService] },
       { path: 'seller/cell-phones', component: SellerCellPhonesComponent, canActivate: [AuthRouteGuardService, SellerAuthRouteGuardService] },
+      { path: 'seller/cell-phones/add', component: SellerCellPhonesFormComponent, canActivate: [AuthRouteGuardService, SellerAuthRouteGuardService] },
       { path: 'seller/delivery', component: DeliveryComponent, canActivate: [AuthRouteGuardService, SellerAuthRouteGuardService] }
     ])// RouterModule with route objects having path and component
   ],

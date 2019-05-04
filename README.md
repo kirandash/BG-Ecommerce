@@ -152,3 +152,5 @@ Deploy to firebase: firebase deploy
 Check the deployed app at https://ng-ecommerce-42b67.firebaseapp.com/
 
 ## 34. Create seller cell phone form component
+
+## 35. Build Seller form HTML and add navigation
