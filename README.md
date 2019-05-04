@@ -177,3 +177,6 @@ required, #var = "ngModel", #var.touched && #var.invalid
 ## 42. ng2-validation package for custom validation
 https://github.com/yuyang041060120/ng2-validation
 npm install ng2-validation --save
+
+## 43. Show preview of entered data
+Use two way binding with template variables for inputs
