@@ -7,6 +7,10 @@
     <label for="brand">Brand</label>
     <select id="brand" class="form-control">
       <option value=""></option>
+      <option *ngFor="let b of brandsObservable | async" [value]="b.$key">
+        <!--$key returns the key from firebase-->
+        {{b.name}}
+      </option>
     </select>
   </div>
   <div class="form-group">

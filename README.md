@@ -158,3 +158,6 @@ Check the deployed app at https://ng-ecommerce-42b67.firebaseapp.com/
 ## 36. Adding Brands to DB and creating Brand Service
 Create brands in firebase db. (following db.json file)
 Create brand service and add it to providers for app.module.ts
+
+## 37. Brand Service
+Querying brands from firebase
