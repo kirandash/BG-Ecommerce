@@ -180,3 +180,7 @@ npm install ng2-validation --save
 
 ## 43. Show preview of entered data
 Use two way binding with template variables for inputs
+
+## 44. Fetching all phones
+this.database.list('/cellphones').valueChanges();
+and ngFor with async pipes

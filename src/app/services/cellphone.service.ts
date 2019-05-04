@@ -11,4 +11,8 @@ export class CellphoneService {
   add(cellphone){
     return this.database.list('/cellphones').push(cellphone); // returns a promise
   }
+
+  fetchAllPhones(){
+    return this.database.list('/cellphones').valueChanges();
+  }
 }

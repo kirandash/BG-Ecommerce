@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CellphoneService } from 'src/app/services/cellphone.service';
 
 @Component({
   selector: 'app-seller-cell-phones',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./seller-cell-phones.component.css']
 })
 export class SellerCellPhonesComponent implements OnInit {
-
-  constructor() { }
+  cellphonesObservable;
+  constructor(private cellphoneService: CellphoneService) {
+    this.cellphonesObservable = this.cellphoneService.fetchAllPhones();
+  }
 
   ngOnInit() {
   }

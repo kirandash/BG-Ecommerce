@@ -1,1 +1,23 @@
-<a routerLink="/seller/cell-phones/add" class="btn btn-primary">Add Cell Phone</a>
+<p>
+    <a routerLink="/seller/cell-phones/add" class="btn btn-primary">Add Cell Phone</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of cellphonesObservable | async">
+            <td>{{c.model}}</td>
+            <td>{{c.brand}}</td>
+            <td>{{c.price}}</td>
+            <td>{{c.model}}</td>
+            <td><a [routerLink]="['/seller/cell-phones/', c.model]">Edit</a></td>
+        </tr>
+    </tbody>
+</table>
