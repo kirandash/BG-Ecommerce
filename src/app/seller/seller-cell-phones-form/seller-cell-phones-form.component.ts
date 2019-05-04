@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BrandService } from 'src/app/services/brand.service';
+import { CellphoneService } from 'src/app/services/cellphone.service';
 
 @Component({
   selector: 'app-seller-cell-phones-form',
@@ -8,7 +9,7 @@ import { BrandService } from 'src/app/services/brand.service';
 })
 export class SellerCellPhonesFormComponent implements OnInit {
   brandsObservable;
-  constructor(brandService: BrandService) { /* Note that brandService is not having keyword private because we are going to use it only in the constructor and not in any class */ 
+  constructor(brandService: BrandService, private cellphoneService: CellphoneService) { /* Note that brandService is not having keyword private because we are going to use it only in the constructor and not in any class */ 
     this.brandsObservable = brandService.getBrands(); // Observable can be now accessed in HTML using async pipe
   }
 
@@ -16,7 +17,8 @@ export class SellerCellPhonesFormComponent implements OnInit {
   }
 
   save(cellphone){
-    console.log(cellphone);
+    // console.log(cellphone);
+    this.cellphoneService.add(cellphone);
   }
 
 }

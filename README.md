@@ -166,3 +166,7 @@ Querying brands from firebase
 use ngModel directive after importing FormsModule in app.module.ts
 
 ## 39. Create Phone Service to save phone data in db
+
+## 40. Save phone data in db
+use database.list('/cellphones').push(cellphone)
+and check database after saving
