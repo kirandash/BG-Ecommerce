@@ -15,4 +15,8 @@ export class SellerCellPhonesFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  save(cellphone){
+    console.log(cellphone);
+  }
+
 }

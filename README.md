@@ -161,3 +161,6 @@ Create brand service and add it to providers for app.module.ts
 
 ## 37. Brand Service
 Querying brands from firebase
+
+## 38. Setting ngModel for our Template driven form
+use ngModel directive after importing FormsModule in app.module.ts
