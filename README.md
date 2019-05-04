@@ -164,3 +164,5 @@ Querying brands from firebase
 
 ## 38. Setting ngModel for our Template driven form
 use ngModel directive after importing FormsModule in app.module.ts
+
+## 39. Create Phone Service to save phone data in db
